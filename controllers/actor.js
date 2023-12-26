@@ -58,7 +58,7 @@ exports.updateActor = async (req, res) => {
 };
 
 exports.removeActor = async (req, res) => {
-  console.log("1!");
+  
   const { actorId } = req.params;
   if (!isValidObjectId(actorId)) return sendError(res, "Invalid request!");
 

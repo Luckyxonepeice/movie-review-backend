@@ -26,8 +26,8 @@ app.use('/*',handleNotFound);
 //Handles the error
 app.use(errorHandler);
 
-
-app.listen(5000,()=>{
+const port = process.env.PORT
+app.listen(port,()=>{
     console.log("You are in the Port 5000")
 });
 
